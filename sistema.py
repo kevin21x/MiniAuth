@@ -1,7 +1,7 @@
 from .usuario import Usuario
 
 # funcionalidade de alteração de senha
-
+# alteração exclusiva da feature teste merge
 class Sistema:
     def __init__(self):
         self.usuarios = []
