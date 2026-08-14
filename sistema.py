@@ -1,5 +1,7 @@
 from .usuario import Usuario
 
+# funcionalidade de alteração de senha
+
 class Sistema:
     def __init__(self):
         self.usuarios = []
