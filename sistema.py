@@ -22,6 +22,14 @@ class Sistema:
                 return usuario
         return None
 
+    def login2(self, login, senha):
+        if login == '':
+            return False
+        if senha == '':
+            return False
+        return True
+        
+
     def buscar_usuario(self, login):
         for usuario in self.usuarios:
             if usuario.login == login:
