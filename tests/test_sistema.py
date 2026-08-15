@@ -26,6 +26,14 @@ def test_login_maria_senha_incorreta(sistema_com_usuario):
     usuario = sistema_com_usuario.login('Maria', '124')
     assert(usuario is None)
 
+def test_login_com_login_vazio(sistema_com_usuario):
+    usuario = sistema_com_usuario.login('', '123')
+    assert(usuario is None)
+
+def test_login_com_senha_vazia(sistema_com_usuario):
+    usuario = sistema_com_usuario.login('Kevin', '')
+
+    assert(usuario is None)
 
 def test_cadastro_duplicado(sistema):
 
