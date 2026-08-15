@@ -17,6 +17,8 @@ class Sistema:
         return usuario
 
     def login(self, login, senha):
+        if not login or not senha:
+            return None
         for usuario in self.usuarios:
             if usuario.login == login and usuario.senha == senha and usuario.ativo:
                 return usuario
